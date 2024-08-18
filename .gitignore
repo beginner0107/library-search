@@ -38,3 +38,5 @@ out/
 /search-api/src/main/resources/application.properties
 /external/src/main/resources/application.properties
 /common/src/main/resources/application.properties
+external/naver-client/src/test/resources/application-test.yml
+external/naver-client/src/main/resources/application-naver-client.yml
