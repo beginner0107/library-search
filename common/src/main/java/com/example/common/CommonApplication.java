@@ -1,13 +1,13 @@
-package com.example.librarysearch;
+package com.example.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LibrarySearchApplication {
+public class CommonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LibrarySearchApplication.class, args);
+        SpringApplication.run(CommonApplication.class, args);
     }
 
 }
