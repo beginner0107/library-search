@@ -15,6 +15,6 @@ public class Item {
     private String publisher;
     @JsonProperty("pubdate")
     private String pubDate;
-    private String isb;
+    private String isbn;
     private String description;
 }
