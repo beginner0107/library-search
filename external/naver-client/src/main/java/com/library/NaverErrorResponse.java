@@ -1,4 +1,4 @@
-package com.library.feign;
+package com.library;
 
 public class NaverErrorResponse {
     private String errorMessage;

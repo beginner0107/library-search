@@ -1,6 +1,7 @@
 package com.library.feign;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.library.NaverErrorResponse;
 import feign.Response;
 import feign.codec.ErrorDecoder;
 
