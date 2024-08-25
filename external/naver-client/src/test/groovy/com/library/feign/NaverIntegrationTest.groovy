@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles
 import spock.lang.Ignore
 import spock.lang.Specification
 
-@Ignore /* 외부 API는 항상 똑같은 테스트 결과를 제시하지 못함 -> ignore 처리 */
+@Ignore
 @SpringBootTest(classes = NaverClientIntegrationTest.TestConfig.class)
 @ActiveProfiles("test")
 class NaverClientIntegrationTest extends Specification {

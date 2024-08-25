@@ -1,5 +1,11 @@
 package com.library;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+import static lombok.AccessLevel.*;
+
+@NoArgsConstructor(access = PROTECTED)
 public class NaverErrorResponse {
     private String errorMessage;
     private String errorCode;
