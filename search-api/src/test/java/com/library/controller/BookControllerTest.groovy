@@ -63,4 +63,17 @@ class BookControllerTest extends Specification {
                 assert date == givenDate
         }
     }
+
+    def "findStatRanking"() {
+        when:
+        def response = mockMvc.perform(
+                MockMvcRequestBuilders.get("/v1/books/stats/ranking"))
+                .andReturn()
+                .response
+
+        then:
+        response.status == HttpStatus.OK.value()
+
+        1 * bookApplicationService.findTop5Query()
+    }
 }
