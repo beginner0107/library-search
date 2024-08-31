@@ -3,6 +3,7 @@ package com.library.controller
 import com.library.controller.request.SearchRequest
 import com.library.controller.response.PageResult
 import com.library.controller.response.SearchResponse
+import com.library.feign.KakaoClient
 import com.library.service.BookQueryService
 import org.spockframework.spring.SpringBean
 import org.springframework.beans.factory.annotation.Autowired
@@ -14,9 +15,7 @@ import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import spock.lang.Specification
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
 @ActiveProfiles("test")
 @SpringBootTest

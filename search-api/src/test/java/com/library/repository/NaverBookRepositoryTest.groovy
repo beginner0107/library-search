@@ -24,11 +24,11 @@ class NaverBookRepositoryTest extends Specification {
         ]
 
         def response = new NaverBookResponse(
-                lastBuildDate: "Wed, 29 May 2024 21:12:29 +0900",
-                total: 2,
-                start: 1,
-                display: 2,
-                items: items
+                "Wed, 29 May 2024 21:12:29 +0900",  // lastBuildDate
+                2,                                        // total
+                1,                                        // start
+                2,                                      // display
+                items                                          // items
         )
 
         1 * naverClient.search("HTTP", 1, 2) >> response
