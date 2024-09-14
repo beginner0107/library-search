@@ -28,7 +28,7 @@ public class AsyncConfig implements AsyncConfigurer {
         executor.setWaitForTasksToCompleteOnShutdown(true);
         executor.setAwaitTerminationSeconds(60);
         executor.setThreadNamePrefix("LS-");
-        executor.initialize();;
+        executor.initialize();
         return executor;
     }
 

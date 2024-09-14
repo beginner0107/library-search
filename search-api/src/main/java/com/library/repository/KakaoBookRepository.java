@@ -1,7 +1,6 @@
 package com.library.repository;
 
 import com.library.Document;
-import com.library.Item;
 import com.library.KakaoBookResponse;
 import com.library.controller.response.PageResult;
 import com.library.controller.response.SearchResponse;
