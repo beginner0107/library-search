@@ -11,7 +11,7 @@ import org.springframework.http.HttpStatus;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import static com.library.ErrorType.EXTERNAL_API_ERROR;
+import static com.library.exception.ErrorType.EXTERNAL_API_ERROR;
 
 @Slf4j
 public class KakaoErrorDecoder implements ErrorDecoder {
